@@ -75,8 +75,11 @@ for f in ["experience_restored/comic.html", "experience_restored/index.html"]:
 
 print("Adding missing fonts...")
 
-shutil.copy("data/edo-webfont.ttf", "experience_restored/fonts/edo_regular_macroman/edo-webfont.ttf")
-shutil.copy("data/edo-webfont.woff", "experience_restored/fonts/edo_regular_macroman/edo-webfont.woff")
+if os.path.exists("data/edo-webfont.ttf") and os.path.exists("data/edo-webfont.woff"):
+	shutil.copy("data/edo-webfont.ttf", "experience_restored/fonts/edo_regular_macroman/edo-webfont.ttf")
+	shutil.copy("data/edo-webfont.woff", "experience_restored/fonts/edo_regular_macroman/edo-webfont.woff")
+else:
+	print(" - No font files provided, skipping!")
 
 
 # Recover comic pages --------------------------------------------------------------------------------------------------
