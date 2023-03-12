@@ -5,7 +5,7 @@
 
 # Requirements
 
--   Python 3 with BeautifulSoup4 installed
+-   Python 3 with BeautifulSoup4 installed (You can run `pip install -r requirements.txt` to install)
 -   Requires a backed up copy of the website's files in the `data/experience` folder (`index.html` should be directly in the `experience` folder)
 -   Requires putting `edo-webfont.ttf` and `edo-webfont.woff` in the `data` folder
 -   Requires basic Python usage skills
