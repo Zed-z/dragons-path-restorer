@@ -1,0 +1,4 @@
+data/*
+!data/! put required files here !
+experience_restored/
+.idea/
