@@ -2,3 +2,5 @@ data/*
 !data/! put required files here !
 experience_restored/
 .idea/
+venv/
+__pycache__/

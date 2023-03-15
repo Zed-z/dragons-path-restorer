@@ -13,9 +13,13 @@
 # Setup
 
 -   Obtain and put the required files in the appropriate folders
--   Run the `comic-generator.py` script to prepare files and apply fixes
--   Start the web server using `start-webserver.py` or a tool of your choice
--   If it doesn't work straight away, refresh a couple of times
+-   Run the `comic_generator.py` script to prepare files and apply fixes
+
+# Viewing the comic
+
+-   After initial setup, the comic starts up automatically
+-   To view it any other time, start the web server using `start_webserver.py` or a tool of your choice
+-   If the site doesn't work straight away, refresh a couple of times
 
 # Note
 
