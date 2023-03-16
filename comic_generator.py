@@ -204,7 +204,7 @@ if config.local_resources:
 
 	print("Copying local resources...")
 
-	shutil.copytree("data/dcpcr4l1vpi6d", "experience_restored/dcpcr4l1vpi6d")
+	shutil.copytree("data/dcpcr4l1vpi6d.cloudfront.net", "experience_restored/dcpcr4l1vpi6d.cloudfront.net")
 
 
 # Updating resource references -----------------------------------------------------------------------------------------
@@ -220,7 +220,7 @@ if config.local_resources:
 				with open(os.path.join(root, file), "r") as fr:
 					file_data = fr.read()
 				with open(os.path.join(root, file), "w") as fw:
-					fw.write(file_data.replace("https://dcpcr4l1vpi6d.cloudfront.net/", "/dcpcr4l1vpi6d/"))
+					fw.write(file_data.replace("https://dcpcr4l1vpi6d.cloudfront.net/", "/dcpcr4l1vpi6d.cloudfront.net/"))
 
 			except UnicodeDecodeError:
 				#print("Encode error!", os.path.join(root, file))

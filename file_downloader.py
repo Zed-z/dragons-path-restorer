@@ -16,8 +16,7 @@ def main(logs=False):
 
                         pattern_html_quote = re.compile(r'"https://dcpcr4l1vpi6d.cloudfront.net/[^\"]*"', re.IGNORECASE)
                         pattern_html_apostrophe = re.compile(r"'https://dcpcr4l1vpi6d.cloudfront.net/[^\']*'", re.IGNORECASE)
-                        pattern_css = re.compile(r"url\(https://dcpcr4l1vpi6d\.cloudfront\.[^\)]*\)",
-                                             re.IGNORECASE)
+                        pattern_css = re.compile(r"url\(https://dcpcr4l1vpi6d\.cloudfront\.[^\)]*\)", re.IGNORECASE)
 
                         for url in re.findall(pattern_html_quote, line):
                             urls.append(url.replace("\"", "").replace("\\", ""))
@@ -40,7 +39,7 @@ def main(logs=False):
     for url in urls:
         print(" - Downloading:", url)
 
-        filepath = url.replace("https://dcpcr4l1vpi6d.cloudfront.net", "data/dcpcr4l1vpi6d")
+        filepath = url.replace("https://dcpcr4l1vpi6d.cloudfront.net", "data/dcpcr4l1vpi6d.cloudfront.net")
         filedir = "/".join(filepath.split("/")[:-1])
         if logs: print(filepath, filedir)
 
