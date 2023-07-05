@@ -9,7 +9,7 @@ def main():
 
     webbrowser.open('http://localhost:' + str(webserver_port))
 
-    web_dir = os.path.join(os.path.dirname(__file__), "experience_restored")
+    web_dir = os.path.join(os.path.dirname(__file__), "../experience_restored")
     os.chdir(web_dir)
 
     print("Serving website at http://localhost:" + str(webserver_port))
