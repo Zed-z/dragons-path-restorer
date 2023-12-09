@@ -229,6 +229,14 @@ def generate():
 					pass
 
 
+	# Patching PreloadJS -----------------------------------------------------------------------------------------------
+
+	print("Patching PreloadJS...")
+
+	import patch_preloadjs
+	patch_preloadjs.main()
+
+
 	# Adding redirect --------------------------------------------------------------------------------------------------
 
 	if config.auto_redirect:

@@ -10,6 +10,7 @@
 # Requirements
 
 - Python 3, preferably added to the system PATH
+    - You can download it [here](https://www.python.org/downloads/)
 - Basic file management, terminal and Python usage skills
 
 # Setup and usage
@@ -52,5 +53,5 @@
 # Notes and known issues
 
 - This only fixes the comic, other features of the Experience site are still non-functional
-- Sounds don't work consistently, sometimes you need to click around or mute and unmute to make them play
+- Sounds don't work consistently, sometimes you need to click on the comit or mute and unmute to make them play
 - If the site doesn't work straight away, refresh a couple of times
