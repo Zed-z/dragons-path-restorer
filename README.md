@@ -49,9 +49,10 @@
     - On earlier versions of Windows, you can select File Explorer's address bar, typ `cmd` and press enter
 1. Install required python packages with `pip install -r requirements.txt`
 1. Run `python3 dp_restorer.py` to prepare files, apply fixes and launch the comic in your browser
+1. Please read the section below!
 
 # Notes and known issues
 
 - This only fixes the comic, other features of the Experience site are still non-functional
-- Sounds don't work consistently, sometimes you need to click on the comit or mute and unmute to make them play
+- Sounds don't work consistently due to some permission issues on modern browsers, you may need to click on comic panels or mute and unmute to make them play (for reference, most of the panels *should* have sound)
 - If the site doesn't work straight away, refresh a couple of times
