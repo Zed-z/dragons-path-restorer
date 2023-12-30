@@ -177,7 +177,7 @@ def generate():
 			# Dark mode
 			fa.write("""
 				@media(prefers-color-scheme: dark) {
-					body { backdrop-filter: invert(); }
+					body { backdrop-filter: invert(); height: auto !important; }
 					.item.active:not(:hover) .teko { color: white; }
 					.onClickCloseModal.close.edo { color: white !important; }
 					.loader { background-color: black !important; }
