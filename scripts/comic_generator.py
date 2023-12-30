@@ -177,7 +177,7 @@ def generate():
 			# Dark mode
 			fa.write("""
 				@media(prefers-color-scheme: dark) {
-					body { backdrop-filter: invert(); height: auto !important; }
+					body { backdrop-filter: invert(); }
 					.item.active:not(:hover) .teko { color: white; }
 					.onClickCloseModal.close.edo { color: white !important; }
 					.loader { background-color: black !important; }
@@ -189,6 +189,17 @@ def generate():
 
 			# Font size
 			fa.write(".teko.regular { font-size: 4em; }")
+
+		# Background fill fix
+		with open("experience_restored/comic.html") as file:
+			comicdata = bs4.BeautifulSoup(file.read(), features="html.parser")
+		body_tag = comicdata.find("body")
+		if "style" in body_tag.attrs:
+			comicdata.find("body")["style"] += "height: auto !important;"
+		else:
+			comicdata.find("body")["style"] = "height: auto !important;"
+		with open("experience_restored/comic.html", "w") as file:
+			file.write(str(comicdata))
 
 
 	# Download resources locally ---------------------------------------------------------------------------------------

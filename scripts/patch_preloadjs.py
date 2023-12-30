@@ -5,7 +5,6 @@ import shutil
 
 
 def main(log=False):
-	print("Patching PreloadJS...")
 
 	# Download PreloadJS
 	url = "https://code.createjs.com/preloadjs-0.6.2.min.js"
