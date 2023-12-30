@@ -120,6 +120,7 @@ def generate():
 
 		# Replace data
 		comicdata_write = str(comicdata)
+		comicdata_write = comicdata_write.replace("isReady>=4", "isReady>=0")  # Ready cel threshold
 		comicdata_write = comicdata_write.replace("=4", "=32")  # Cel count
 		comicdata_write = comicdata_write.replace("href=\"comic\"", "href=\"comic.html\"")  # Comic menu references
 

@@ -56,3 +56,4 @@
 - This only fixes the comic, other features of the Experience site are still non-functional
 - Sounds don't work consistently due to some permission issues on modern browsers, you may need to click on comic panels or mute and unmute to make them play (for reference, most of the panels *should* have sound)
 - If the site doesn't work straight away, refresh a couple of times
+- To re-generate the comic in case of any issues, delete the `data/generator_lock` file and run the script again
