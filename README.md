@@ -19,7 +19,7 @@
     - Click the green `<>Code` button and press `Download ZIP`
     - Extract the ZIP file in a directory of your choice
 1. Obtain and put required files in the appropriate folders:
-    - *Requires* putting a backed up copy of the website's files `data/experience`
+    - *Requires* putting a backed up copy of the website's files under `data/experience`
         - Special thanks to KaiZettaSlow for dumping the [contents of the Yakuza Experience site](https://drive.google.com/file/d/1S4Pmcr5-kE0YFVCF-cSZP7eSobBEnxTH/view)!
         - `index.html` should be directly in the `experience` folder alongside files such as `comic-a-twist-of-fate-1`
     - *Optionally*,  put `edo-webfont.ttf` and `edo-webfont.woff` in the `data` folder
