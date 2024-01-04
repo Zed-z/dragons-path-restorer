@@ -1,4 +1,4 @@
-# The Dragon's Path Comic Restorer
+# "Yakuza: The Dragon's Path" Comic Restorer
 
 <img src="promo/menu.png" width="49%"/> <img src="promo/comic.png" width="49%"/> 
 
@@ -53,7 +53,9 @@
 
 # Notes and known issues
 
-- This only fixes the comic, other features of the Experience site are still non-functional
-- Sounds don't work consistently due to some permission issues on modern browsers, you may need to click on comic panels or mute and unmute to make them play (for reference, most of the panels *should* have sound)
-- If the site doesn't work straight away, refresh a couple of times
+- This only fixes the comic, other features of the Experience site remain non-functional
+- Sounds don't work consistently due to permission issues on modern browsers
+    - You may need to click on comic panels or mute and unmute to make them play
+    - For reference, most of the panels *should* have sound
+- If the site doesn't work, refresh a couple of times and try clearing your cache
 - To re-generate the comic in case of any issues, delete the `data/generator_lock` file and run the script again
