@@ -243,10 +243,10 @@ def generate():
 
 	# Patching PreloadJS -----------------------------------------------------------------------------------------------
 
-	print("Patching PreloadJS...")
+	print("Downloading and patching scripts...")
 
-	import patch_preloadjs
-	patch_preloadjs.main()
+	import script_downloader
+	script_downloader.main()
 
 
 	# Adding redirect --------------------------------------------------------------------------------------------------
