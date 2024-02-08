@@ -29,14 +29,14 @@
         📂data/
         |-- ! put required files here !
         |-- 📂experience/
-        |   |--- 📂css/...
-        |   |--- 📂js/...
-        |   |--- index.html
-        |   |--- comic
-        |   |--- map
-        |   |--- comic-a-twist-of-fate-1
-        |   |--- comic-a-twist-of-fate-2
-        |   |--- ...
+        |   |-- 📂css/...
+        |   |-- 📂js/...
+        |   |-- index.html
+        |   |-- comic
+        |   |-- map
+        |   |-- comic-a-twist-of-fate-1
+        |   |-- comic-a-twist-of-fate-2
+        |   |-- ...
         |-- edo-webfont.ttf
         |-- edo-webfont.woff
         ```
@@ -46,7 +46,7 @@
     - You should leave other entries set to their default values, unless you know what you're doing
 1. Open a terminal in the main project directory
     - On Windows 11, you can right click empty space in the folder and press `Open in Terminal`
-    - On earlier versions of Windows, you can select File Explorer's address bar, typ `cmd` and press enter
+    - On earlier versions of Windows, you can select File Explorer's address bar, type in `cmd` and press enter
 1. Install required python packages with `pip install -r requirements.txt`
 1. Run `python3 dp_restorer.py` to prepare files, apply fixes and launch the comic in your browser
 1. Please read the section below!
